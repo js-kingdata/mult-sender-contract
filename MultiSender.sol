@@ -391,10 +391,9 @@ contract MultiSender {
     using Address for address payable;
     
     /**
-    * @dev calls the ERC20 token's transferFrom function
     * @param token address The address of ERC20 token.
-    * @param to address The addresses which be air dropped.
-    * @param amount uint256 The token values that each address will receive.
+    * @param to address[] The addresses which be air dropped.
+    * @param amount uint256[] The token values that each address will receive.
     */
     function multiTransfer(IERC20 token, address[] calldata to, uint256[] calldata amount) public payable {
         require(to.length == amount.length,"to.length == amount.length");
@@ -403,6 +402,11 @@ contract MultiSender {
         }
     }
     
+    /**
+    * @param token address The address of ERC20 token.
+    * @param to address[] The addresses which be air dropped.
+    * @param amount uint256[] The token values that each address will receive.
+    */
     function safeMultiTransfer(IERC20 token, address payable[] calldata to, uint256[] calldata amount) payable external{
         require(to.length == amount.length,"to.length == amount.length");
         for(uint256 i = 0; i< to.length; i++){
