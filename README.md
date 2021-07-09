@@ -2,7 +2,9 @@
 
 ## 注：转账前需要调用 ERC20 代币合约的 'approve' 方法，给该合约进行授权
 
-+ 合约已部署到BSC链：[0xdeC44Cb3318244897BeEEdD03AdB3d7510f7147D](https://bscscan.com/address/0xdeC44Cb3318244897BeEEdD03AdB3d7510f7147D)
+## 已部署链
++ BSC：[0xdeC44Cb3318244897BeEEdD03AdB3d7510f7147D](https://bscscan.com/address/0xdeC44Cb3318244897BeEEdD03AdB3d7510f7147D)
++ HECO：[0x00D69a4ca675352e328f2d36b2B777dAc7DC6741](https://hecoinfo.com/address/0x00D69a4ca675352e328f2d36b2B777dAc7DC6741)
 
 ## 方法参数说明
 - 方法名称: `safeMultiTransfer`
